@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bai3.css">
+</head>
+<body>
+
+    <div id="head">
+      <div id="up">
+          <h1>Lucky Number</h1>
+      </div>
+
+      <div id="mid">
+          <p>Dự đoán con số của bạn nằm trong khoảng từ 1 đến 10</p>
+      </div>
+
+      <div id="down">
+          <div id="inputNumber">
+              <input type="text" placeholder="Nhập con số mà bạn dự đoán" id="a1">
+          </div>
+          <div id="quayso">
+            <input type="button" value="submit" onclick="checkForm()">
+          </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+    function checkForm(){
+        let number = document.getElementById('a1').value;
+        if(isNaN(number)) {
+            alert("Vui lòng nhập số")
+        } else {
+            if(number > 0 && number <=10){
+                alert("Chúc Mừng bạn đã chọn số may mắn")
+            }else {
+                alert("Vui lòng chọn số từ 1 tới 10")
+            }
+         
+        }
+    }
+    </script>
+
+
+    <script src="./bai3.js"></script>
+</body>
+</html>
