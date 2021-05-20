@@ -23,26 +23,10 @@
               <input type="text" placeholder="Nhập con số mà bạn dự đoán" id="a1">
           </div>
           <div id="quayso">
-            <input type="button" value="submit" onclick="checkForm()">
+            <input type="button" value="QUAY SỐ" onclick="checkForm()">
           </div>
       </div>
     </div>
-    <script type="text/javascript">
-    function checkForm(){
-        let number = document.getElementById('a1').value;
-        if(isNaN(number)) {
-            alert("Vui lòng nhập số")
-        } else {
-            if(number > 0 && number <=10){
-                alert("Chúc Mừng bạn đã chọn số may mắn")
-            }else {
-                alert("Vui lòng chọn số từ 1 tới 10")
-            }
-         
-        }
-    }
-    </script>
-
 
     <script src="./bai3.js"></script>
 </body>
